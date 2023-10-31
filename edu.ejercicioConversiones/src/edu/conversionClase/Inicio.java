@@ -8,17 +8,15 @@ public class Inicio {
 		// metodo por donde entrará la aplicacion
 		
 		// double -> int
-		public int EscribeunNumero(Scanner comunicacionTecladoM)
-		int opcionSeleccionada;
-		
-		
-		deDoubleAInt ();
+	
+			deDoubleAInt ();
 		
 		// Double -> string
 		deDoubleAString ();
 
 	}
-	
+		
+	}
 	public static void deDoubleAInt () {
 		
 		double numeroReal = 5;
@@ -45,4 +43,7 @@ public class Inicio {
 		
 	}
 
+	char tecla = '-';
+	Character tecla1 = Character.valueOf(tecla);
+     System.out.println(tecla1.getClass().getName()); //numEnteroW será un tipo Integer, un objeto.
 }
