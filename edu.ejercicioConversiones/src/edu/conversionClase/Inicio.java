@@ -5,16 +5,14 @@ import java.util.Scanner;
 public class Inicio {
 
 	public static void main(String[] args) {
-		// metodo por donde entrará la aplicacion
+		// metodo por donde entrará la aplicación
 		
 		// double -> int
-	int numeroEntero;
-	numeroEntero= deDoubleAInt();
-			
+		int numeroEntero;
+		numeroEntero= deDoubleAInt();	
 		
 		// Double -> string
 		deIntAString (numeroEntero);
-
 	}
 		
 	public static int deDoubleAInt () {
@@ -25,25 +23,13 @@ public class Inicio {
 		numero = numeroIntroducido.nextDouble();
 		int numeroEntero = (int) numero;
 		
-	  return numeroEntero;
+		return numeroEntero;
 		
 	}
 	
 	
-	public  static void deIntAString (int numeroEntero) {
-		
-		int numeroEntero= 5;
-		String texto = Double.toString(numeroReal);
-		
-		System.out.println("valor string" + texto);
-	
-		
-		Scanner numeroIntroducido = new Scanner(System.in);
-		numero = numeroIntroducido.nextDouble(); 
-		System.out.println ("El número untroducido es " + numero);	
-		
-		
+	public static void deIntAString (int numeroEntero) {
+		String texto = String.valueOf(numeroEntero);
+		System.out.println("valor string: " + texto);
 	}
-
-	
 }
