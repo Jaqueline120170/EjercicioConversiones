@@ -8,42 +8,42 @@ public class Inicio {
 		// metodo por donde entrará la aplicacion
 		
 		// double -> int
-	
-			deDoubleAInt ();
+	int numeroEntero;
+	numeroEntero= deDoubleAInt();
+			
 		
 		// Double -> string
-		deDoubleAString ();
+		deIntAString (numeroEntero);
 
 	}
 		
-	}
-	public static void deDoubleAInt () {
+	public static int deDoubleAInt () {
 		
-		double numeroReal = 5;
-		int numeroEntero = (int)4.6;
+		double numero;
+		System.out.println("Introduce un número");
+		Scanner numeroIntroducido = new Scanner(System.in);
+		numero = numeroIntroducido.nextDouble();
+		int numeroEntero = (int) numero;
 		
-	 
-	    
-	    System.out.println ("valor numero entero" + numeroEntero);
-		System.out.println ("valor numero double" + numeroReal);
+	  return numeroEntero;
 		
 	}
 	
 	
-	public  static void deDoubleAString () {
+	public  static void deIntAString (int numeroEntero) {
 		
-		double numeroReal= 5;
+		int numeroEntero= 5;
 		String texto = Double.toString(numeroReal);
 		
 		System.out.println("valor string" + texto);
 	
 		
-		
+		Scanner numeroIntroducido = new Scanner(System.in);
+		numero = numeroIntroducido.nextDouble(); 
+		System.out.println ("El número untroducido es " + numero);	
 		
 		
 	}
 
-	char tecla = '-';
-	Character tecla1 = Character.valueOf(tecla);
-     System.out.println(tecla1.getClass().getName()); //numEnteroW será un tipo Integer, un objeto.
+	
 }
